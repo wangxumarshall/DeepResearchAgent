@@ -1,0 +1,11 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+#run-button {
+    background-color: #3b82f6;
+}
+
+#run-button:hover {
+    background-color: #2563eb;
+}
