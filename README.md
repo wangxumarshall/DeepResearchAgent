@@ -138,6 +138,22 @@ A simple example to demonstrate the usage of a single agent, such as a general t
 python examples/run_general.py
 ```
 
+### Web Interface
+This project also includes a web interface to interact with the agent.
+
+**1. Install Dependencies**
+Install the web server dependencies:
+```bash
+pip install fastapi uvicorn
+```
+
+**2. Run the Web Server**
+To run the web server, use the following command:
+```bash
+uvicorn web.main:app --reload
+```
+The web interface will be available at [http://127.0.0.1:8000](http://127.0.0.1:8000).
+
 ### RUN GAIA Evaluation Example
 
 ```bash

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Research Agent</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <div class="container mx-auto p-4">
+        <h1 class="text-4xl font-bold text-center my-8">Deep Research Agent</h1>
+        <div class="max-w-2xl mx-auto">
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <form id="task-form">
+                    <div class="mb-4">
+                        <label for="task" class="block text-gray-700 text-sm font-bold mb-2">Enter your research task:</label>
+                        <textarea id="task" name="task" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="e.g., Use deep_researcher_agent to search the latest papers on the topic of 'AI Agent' and then summarize it."></textarea>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <button id="run-button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                            Run Agent
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div id="results-container" class="bg-white p-8 rounded-lg shadow-md mt-8" style="display: none;">
+                <h2 class="text-2xl font-bold mb-4">Results</h2>
+                <div id="results-content" class="text-gray-700"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
